@@ -1,7 +1,16 @@
+
+/*
+Declaração de Variaves CSS3
+*/
+
 :root{
     --vermelho: #E50914;
     --preta: #141414;
 }
+
+/*
+Reset CSS3
+*/
 
 *{
     margin: 0;
@@ -10,10 +19,14 @@
 
 }
 
+/*
+Base Principal 
+*/
+
 body{
     background:var(--preta);
     font-family: 'Oswald', sans-serif;
-
+    color: white;
 }
 
 header .container{
@@ -40,8 +53,28 @@ header nav a:hover{
     color:#fff;
 }
 
+/*
+Relacionados ao filme
+*/
 
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.30),rgba(0,0,0,.30)100%), url('/netFlix/Img/b30832b8-e9dc-42da-98a5-24d908dc3011/netflix-clone-master/img/capa-house.jpg');
+    
+    height: 700px;
+    background-size: cover;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 
+}
 
+.filme-principal .descricao{
+    margin-bottom: 40px;
+}
 
+.titulo{
+    font-size: 40px;
+}
